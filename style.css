@@ -423,6 +423,9 @@ span {
 .hamburger {
     visibility: hidden;
 }
+.media-1024{
+    visibility: hidden;
+}
 
 @media(max-width: 1024px) {
     .aside1 {
@@ -432,7 +435,18 @@ span {
     .aside2 {
         display: none;
     }
-
+    .media-1024{
+        visibility: visible;
+        display: flex;
+        gap: 35px;
+        margin-top: 15px;
+        height: 150px;
+        margin-right: 0;
+    }
+    .navdiv{
+        visibility: hidden;
+        margin-top: 1px;
+    }
     .media-test {
         display: none;
     }
@@ -503,7 +517,7 @@ span {
         /* width: calc(100% - 20px); or ican also use left 10px and right 10px */
         left: 5px;
         right: 10px;
-        width: 80%;
+        width: 100%;
         justify-content: flex-start;
         overflow: hidden;
         margin-left: 20px;
@@ -523,12 +537,7 @@ span {
         height: 100px;
         width: 80px;
     }
-    .ge
-    .main-div2{
-         height: 80px;
-        width: 80px;
-        line-height: 20px;
-    }
+    
     .button1 {
         visibility: visible;
         position: absolute;
@@ -546,13 +555,28 @@ span {
     }
     .contact{
         display: flex;
+        height: 500px;
+        width: 100%;
+        padding-left: 50px;
+        margin-left: 0;
+        flex-direction: column;
+        gap: 100px;
+
     }
     .contact-text{
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: flex-start;
+        margin: 0;
+        width: 80%;
     }
     .contact-text2{
         flex-wrap: wrap;
+        margin: 0;
+    }
+    .checkbox{
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
     }
 
     .hamburger {
