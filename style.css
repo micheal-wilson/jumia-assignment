@@ -222,7 +222,7 @@ h1 {
     justify-content: space-evenly;
     background-color: white;
     border-radius: 6px;
-    height: 235px;
+    height: auto;
 }
 
 .main-div1 {
@@ -274,6 +274,7 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     background-color: white;
+    flex-wrap: wrap;
 
 }
 
@@ -300,6 +301,7 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     background-color: white;
+    flex-wrap: wrap;
 
 }
 
@@ -387,6 +389,13 @@ h1 {
     display: flex;
     background-color: #272522;
     padding-left: 350px;
+    height: 350px;
+    
+}
+.for-email{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
 }
 
 .contact-email {
@@ -409,6 +418,7 @@ h1 {
     background-color: black;
     color: white;
     border-radius: 5px;
+    margin-top: 4px;
 }
 
 .contact-text2 {
@@ -426,12 +436,35 @@ span {
 .media-1024{
     visibility: hidden;
 }
+.back-to-top{
+    position: fixed;
+    background-color: #b6ad9f;
+    right: 40px;
+    bottom: 100px;
+    width: 40px;
+    height: 50px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 
 @media(max-width: 1024px) {
     .aside1 {
         display: none;
     }
-
+    .back-to-top{
+    position: fixed;
+    background-color: #b6ad9f;
+    right: 130px;
+    bottom: 100px;
+    width: 40px;
+    height: 50px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
     .aside2 {
         display: none;
     }
@@ -556,7 +589,7 @@ span {
     .contact{
         display: flex;
         height: 500px;
-        width: 100%;
+        width: 98%;
         padding-left: 50px;
         margin-left: 0;
         flex-direction: column;
@@ -585,6 +618,191 @@ span {
         visibility: visible;
 
     }
-
-
 }
+@media(max-width: 720px){
+    .header1{
+        position: relative;
+        height: 132px;   
+        margin-top: 3px;
+    }
+    .back-to-top{
+    position: fixed;
+    background-color: #b6ad9f;
+    left: 350px;
+    bottom: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+    .searchbar{
+        position: absolute;
+        width: 90%;
+        height: 20px;
+        margin-right: 20px;
+        top: 20px;
+        padding-left: 16px ;
+        font-size: 16px;
+    }
+    .button1{
+        visibility: hidden;
+    }
+    .searchdiv{
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        height: 100px;
+        top: 59px;
+    }
+    .logo1{
+        position: static;
+        width: 50px;
+        margin-top: 8px;
+        font-size: 27px;
+        padding: 0;
+        padding-left: 10px;
+    }
+    .logo{
+        width: 30px;
+        height: 30px;
+    }
+    .media-1024{
+        padding: 0;
+        margin: 0;
+        margin-left: 49px;
+        padding-left: 50px;
+        gap: 19px;
+    }
+    .svg-icon{
+        padding-top: 8px;
+        width: 40px;
+        height: 30px;
+        
+    }
+    .hamburger{
+        margin: 0;
+        padding: 0;
+        padding-top: 20px;
+        padding-left: 5px;
+    }
+    .main1{
+        width: 400px;
+        height: 200px;
+        margin-top: 10px;
+        padding-top: 20px;
+    }
+    .centermain{
+        width: 100%;
+        margin-top: 1px;
+    }
+    .flexmain{
+        position: relative;
+        width: 100%;
+
+        bottom: 50px;        
+    }
+    .gen-main-div1{
+        flex-wrap: nowrap;
+        /* overflow havent been taught yet */
+        overflow-x: scroll;
+        gap: 8px;
+        height: 130px;
+
+    }
+    .main-div1{
+        margin: 0;
+        font-size:  13px;
+        line-height: 14px;
+        border-radius: 0;
+        transition: none;
+    }
+    
+    .top-images{
+        border-radius: 0;
+        height: fit-content;
+    }
+    .gen-main-div2{
+        margin: 0;
+        padding: 0;
+        flex-direction: row;
+    }
+    .main-div2{
+        border: 2px solid #ccc5bc;
+        width: 190px;
+        height: 250px;
+        line-height: 3px;
+        border-radius: 7px;
+    }
+    .img-main-div2{
+        height: 150px;
+        width: 190px;
+        border-radius: 7px;
+    }
+    .gen-main-div3{
+        flex-wrap: nowrap;
+        /* overflow havent been taught yet */
+        overflow-x: scroll;
+        gap: 8px;
+        height: 240px;
+    }
+    .main-div3{
+        width: 200px;
+        height: 210px;
+        border-radius: 7px;
+    }
+    .img-main-div3{
+        width: 200px;
+        height: 170px;
+        border-radius: 7px;
+    }
+    .gen-main-div4{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        gap: 8px;
+        height: 240px;
+    }
+    .main-div3{
+        width: 200px;
+        height: 210px;
+        border-radius: 7px;
+    }
+    .img-main-div3{
+        width: 200px;
+        height: 170px;
+    }
+    .contact{
+        margin: 0;
+        padding: 0;
+        padding-left: 5px;
+        height: auto;
+    }
+    .contact-email-button{
+        width: 100px;
+        height: 40px;
+    }
+    .contact-email{
+        width: 200px;
+        height: 40px;
+    }
+    .checkbox{
+        height: 20px;
+        width: 15px;
+    }
+    .gen-main-div5{
+         margin: 0;
+        padding: 0;
+        gap: 3px;
+    }
+    .main-div5{
+        border: 2px solid #cac4bb;
+        width: 190px;
+        height: 230px;
+        line-height: 3px;
+    }
+    .class{
+        width: 190px;
+        height: 200px;
+    }
+} 
